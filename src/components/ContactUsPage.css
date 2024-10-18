@@ -1,0 +1,208 @@
+/* Main container styles */
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    padding: 2rem;
+  }
+  
+  .contact-us-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 80vh;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(122, 122, 123, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(241, 241, 241, 0.18);
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+  }
+  
+  /* Background styles */
+  .contact-us-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      repeating-linear-gradient(0deg, transparent, transparent 2px, #333 2px, #333 3px),
+      repeating-linear-gradient(90deg, transparent, transparent 2px, #333 2px, #333 3px);
+    background-size: cover, 50px 50px, 50px 50px;
+    z-index: -1;
+  }
+  
+  .contact-us-container::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #8a2be2 0%, rgba(138, 43, 226, 0) 70%);
+    bottom: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(50px);
+    z-index: -1;
+  }
+  
+  /* Left side content */
+  .contact-info {
+    flex: 1;
+    padding: 4rem 3rem;
+    background: radial-gradient(circle, #2b0f44 0%, rgba(138, 43, 226, 0) 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .contact-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-details {
+    margin-top: 2rem;
+  }
+  
+  .contact-details p {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-details svg {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  /* Social media icons */
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  /* Right side content */
+  .contact-form {
+    flex: 1;
+    padding: 4rem 3rem;
+    background: radial-gradient(circle, #2b0f44 0%, rgba(138, 43, 226, 0) 70%);
+    background-color: rgba(48, 29, 78, 0.5);
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    flex: 1;
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    background-color: #ffffff;
+    color: rgb(1, 1, 1);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 7px;
+    margin-top: 1rem;
+    float: right;
+  }
+  
+  .submit-btn:hover {
+    background-color: #3a0b3e;
+    color: white;
+  }
+  
+  /* Logo styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;  /* Add space between the contact container and the logo */
+  }
+  
+  .logo-container img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .logo-container span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Wrapper to contain both the contact box and logo */
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }

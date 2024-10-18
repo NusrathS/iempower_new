@@ -1,0 +1,100 @@
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .login-left {
+    flex: 1;
+    background: linear-gradient(45deg, black, #8a2be2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+  }
+  
+  .login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .login-right h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .login-right form div {
+    margin-bottom: 1rem;
+  }
+  
+  .login-right input[type="text"],
+  .login-right input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .sign-in-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4a0e4e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .sign-in-button:hover {
+    background-color: #000000;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #3b3b3b, #000);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 24px;
+  }
+  
+  .back-button:before {
+    content: '<';
+    color: white;
+    font-size: 24px;
+  }
+  
+  .google-sign-in {
+    margin-top: 1rem;
+  }
+  
+  .google-sign-in button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: white;
+    border: 1px solid #c5c1c1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .google-icon {
+    margin-right: 0.5rem;
+  }
+  
+ 

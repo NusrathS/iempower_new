@@ -1,0 +1,123 @@
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .login-left {
+    flex: 1;
+    background: linear-gradient(45deg, rgb(62, 55, 104), #451d6c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #3b3b3b, #000);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .back-button:before {
+    content: '<';
+    color: white;
+    font-size: 24px;
+  }
+  
+  .logo-container {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .logo {
+    width: 300px;
+    height: auto;
+  }
+  
+  .logo-container h1 {
+    margin-top: 1rem;
+  }
+  
+  .login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .checkbox-group input {
+    margin-right: 0.5rem;
+  }
+  
+  .sign-in-button {
+    background-color: #4a0e4e;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .sign-in-button:hover {
+    background-color: #000000; /* Optional: darker shade on hover */
+  }
+  
+  .google-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+
+  .left-container {
+    height: 100vh; /* This makes the left side take the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #8a2be2 0%, rgba(138, 43, 226, 0) 70%);
+    border-radius: 10px;
+  }

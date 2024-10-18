@@ -1,0 +1,133 @@
+.compare-products-container {
+  background: linear-gradient(to right, #1a1a2e, #16213e);
+  color: white;
+  padding: 40px 5vw;
+  font-family: Arial, sans-serif;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+ margin-top: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.text-content {
+  flex-grow: 1;
+  padding-top: 25px;
+}
+
+.title {
+  
+  margin-bottom: 10px;
+  font-weight:bold;
+  margin-left: 90px;
+
+}
+
+.color{
+  color:#8a7ffb ;
+}
+
+
+.subtitle {
+  font-size: 1.2em;
+  opacity: 0.8;
+  margin-left: 90px;
+
+}
+
+.view-more-btn2 {  
+  height: 90px;
+  width: 235px;
+  background-color: #443e3eb0;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+  font-size: 0.9em;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 90px;
+  padding: 0 10px 0 20px;
+  margin-top: 40px;
+}
+
+.view-more-btn2:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.arrow-icon1 {
+  background-color: rgb(155, 57, 247);
+  color: black;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  font-size: 0.8em;
+}
+
+.other-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 164px;
+}
+
+.other-products h2 {
+  font-size: 2.1em;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.logo-container .footer-logo-img {
+  width: 80px; /* Increase width */
+  height: 80px; /* Increase height */
+  margin-right: 370px; /* Adjust space between logo and text */
+  position: absolute;
+  margin-bottom: 20px;
+}
+
+.logo-text {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 170px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .view-more-btn2 {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .other-products {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    margin-top: 20px;
+   
+  }
+}

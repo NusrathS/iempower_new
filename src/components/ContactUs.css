@@ -1,0 +1,38 @@
+.container {
+    background-color: #1a202c;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .contact {
+    font-size: 2.75rem;
+   
+    margin-bottom: 1.6rem;
+    color: #f8f8fa;
+  }
+  .contact1 {
+    font-size: 2.75rem;
+  
+    margin-bottom: 1.6rem;
+    color: #a78bfa;
+  }
+  
+  .imageContainer {
+    margin-top: 1rem;
+    max-width: 300px;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  
+  .sizeControl {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }

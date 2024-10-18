@@ -1,0 +1,159 @@
+.dashboard-container00 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;  
+}
+ 
+.dashboard-content00 {
+    display: flex;
+    gap: 20px; /* Space between the two parts */ 
+    padding: 20px;
+    border-radius: 15px;
+   
+    width: 100%;
+    max-width: 1200px; /* Max width for responsiveness */
+}
+ 
+.dashboard-box00 {
+    flex: 1; /* Each part takes equal width */
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    border: 5px solid rgba(243, 241, 245, 0.452); /* Inside border for each part */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+ 
+.circle00 {
+    width: 55px;  /* Circle size */
+    height: 55px;
+    border: 2px solid #7805d1fd;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+}
+ 
+.circle100 {
+    width: 55px;  /* Circle size */
+    height: 55px;
+    border: 2px solid #7805d1fd;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+}
+ 
+.circle100::before, 
+.circle100::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(48, 47, 47, 0.829); /* Line color */
+}
+ 
+.circle100::before {
+    width: 0.1px;  /* Vertical line width */
+    height: 110px;  /* Vertical line height */
+    top: -0px;  /* Positioning the vertical line */
+    left: 463%;  /* Center the line horizontally */
+    right: 1px;
+    transform: translateX(-50%);
+}
+ 
+.dashboard-text100 {
+    text-align: left; /* Ensure text alignment is left */
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+.dashboard-text100 h3 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    position: relative;
+    bottom: 57px;
+    left: 65px;
+}
+ 
+.dashboard-text100 p {
+    color: #b0b0b0;
+    font-size: 14px;
+    margin: 0;
+    font-family: sans-serif; 
+    position: relative;
+    bottom: 29px;
+}
+ 
+.dashboard-text00 {
+    text-align: left; /* Ensure text alignment is left */
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+.dashboard-text00 h3 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    position: relative;
+    bottom: 40px;
+    left: 65px;
+}
+ 
+.dashboard-text00 p {
+    color: #b0b0b0;
+    font-size: 14px;
+    margin: 0;
+    font-family: Arial, sans-serif; 
+    position: relative;
+    bottom: 10px;
+}
+ 
+.horizontal-line00 {
+    width: 199%; /* Full width of the parent */
+    height: 1px; /* Height of the line */
+    background-color: rgba(48, 47, 47, 0.829); /* Line color */
+    margin: 10px 0; /* Space above and below the line */
+}
+ 
+/* Optional media queries for responsiveness */
+@media (max-width: 768px) {
+    .dashboard-box00 {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+    .dashboard-content00 {
+        flex-direction: column; /* Stack the two parts vertically */
+    }
+}
+/* Style for the paragraph in Payroll History */
+.dashboard-text00 p:first-of-type {
+    display: block;
+    white-space: pre-wrap; /* This preserves white spaces and forces breaks */
+    max-width: 250px; /* Set a max width to force text to break after a specific width */
+    overflow-wrap: break-word; /* Breaks long words if necessary */
+}
+
+.dashboard-text00 p:first-of-type::after {
+    content: '';
+    display: block;
+    white-space: pre-wrap;
+}
+
+/* Style for the paragraph in Salary Register */
+.dashboard-text00 p:nth-of-type(2) {
+    display: block;
+    white-space: pre-wrap;
+    max-width: 250px;
+    overflow-wrap: break-word;
+}
+
+.dashboard-text00 p:nth-of-type(2)::after {
+    content: '';
+    display: block;
+    white-space: pre-wrap;
+}
+
