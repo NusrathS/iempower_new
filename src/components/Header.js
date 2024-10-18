@@ -23,7 +23,7 @@ function Header({ onModulesClick, onExperienceClick, onContactUsClick, onClickSi
     "Leaves And Attendance",
     "Regularisation and Reimbursements"
   ];
-
+// testing
   const handleSignInClick = () => {
     setShowLoginOptions(!showLoginOptions);
   };
